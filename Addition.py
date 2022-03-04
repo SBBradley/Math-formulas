@@ -1,11 +1,8 @@
-#Example of addition formula
-a = 1
-b = 2
-c = 3
-d = 0
+#Example of addition formula.
+a, b, c = 0, 0, 0
 
-def Add(a, b, c):
-    d = a + b + c
-    return d
+def add(b, c):
+    a = b + c
+    return int(a)
 
-print(Add(1, 2, 3))
+print(add(1, 2))
