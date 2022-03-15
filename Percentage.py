@@ -3,6 +3,7 @@ percent, value, totalValue = 0, 0, 0
 
 def getPercentage(value, totalValue):
     percent = (value / totalValue) * 100
-    return int(percent)
+    #return int(percent)
+    print(str(round(percent, 2)) + "%")
 
-print(getPercentage(7, 10),"%")
+getPercentage(7, 10)
