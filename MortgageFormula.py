@@ -15,7 +15,7 @@ Reference: https://www.wallstreetmojo.com/mortgage-formula/
 monthlyPayment, loanAmount, interestRate, numOfMonths = 0, 0, 0, 0
 interestRate = interestRate / 12
 
-#Returns monthly mortgage payment amount.
+#Calculates monthly mortgage payment amount.
 def  getMonthlyPayment(loanAmount, interestRate, numOfMonths):
 
     #monthlyPayment = P * r * (1 + r)^n / [(1 + r)^n -1]

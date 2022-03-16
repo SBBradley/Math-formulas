@@ -1,8 +1,10 @@
 #Example of division formula.
+#March 4, 2022
 a, b, c = 0, 0, 0
 
+#Divides the parameters.
 def divide(b, c):
     a = b / c
-    return int(a)
+    print(int(a))
 
-print(divide(10, 2))
+divide(10, 2)

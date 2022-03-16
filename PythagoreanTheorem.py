@@ -1,11 +1,16 @@
-import math
-
 #Example of pythagorean theorem.
+#March 8, 2022
+
+'''
+Pythagorean theorem:
+a^2 + b^2 = c^2
+'''
+import math
 a, b, c = 0, 0, 0
 
-#a^2 + b^2 = c^2
+#Calculates the pythagorean theorem of the parameters.
 def pyTheorem(a, b):
     c = math.sqrt((a**2) + (b**2))
-    return round(c, 1)
+    print(round(c, 1))
 
-print(pyTheorem(1, 2))
+pyTheorem(1, 2)

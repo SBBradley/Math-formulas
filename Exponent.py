@@ -1,8 +1,10 @@
 #Example of exponent formula.
+#March 4, 2022
 a, b, = 0, 0
 
+#Calculates the exponent value of the parameters.
 def toThePower(a, b):
     a = a**b
-    return int(a)
+    print(a)
 
-print(toThePower(2, 4))
+toThePower(2, 4)
