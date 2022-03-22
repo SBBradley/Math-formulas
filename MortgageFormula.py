@@ -1,5 +1,5 @@
-#Formula for calculating monthly mortgage payments.
-#March 15, 2022
+# Formula for calculating monthly mortgage payments.
+# March 15, 2022
 
 '''
 Fixed monthly mortgage formula:
@@ -15,12 +15,15 @@ Reference: https://www.wallstreetmojo.com/mortgage-formula/
 monthlyPayment, loanAmount, interestRate, numOfMonths = 0, 0, 0, 0
 interestRate = interestRate / 12
 
-#Calculates monthly mortgage payment amount.
-def  getMonthlyPayment(loanAmount, interestRate, numOfMonths):
+# Calculates monthly mortgage payment amount.
+
+
+def getMonthlyPayment(loanAmount, interestRate, numOfMonths):
 
     #monthlyPayment = P * r * (1 + r)^n / [(1 + r)^n -1]
-    monthlyPayment = ((loanAmount * (interestRate * ((1 + interestRate) ** numOfMonths))) 
-                     / (((1 + interestRate) ** numOfMonths) - 1))
+    monthlyPayment = ((loanAmount * (interestRate * ((1 + interestRate) ** numOfMonths)))
+                      / (((1 + interestRate) ** numOfMonths) - 1))
     print("$" + str(round(monthlyPayment, 2)))
-    
+
+
 getMonthlyPayment(1000000, 0.01, 120)
